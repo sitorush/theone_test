@@ -1,8 +1,8 @@
 footer {
 
-  border-top:1px solid $blue-grad-light;
-  @extend .gradient-blue;
-
+  > .blue-bg {
+    @extend .gradient-blue;
+  }
 
   .security {
     text-align: center;
@@ -40,48 +40,72 @@ footer {
     display: none;
   }
 
+  > .menu {
+    justify-content: center;
+    padding:0 1em;
+    li {
+      flex: 1 0 auto;
+      a {
+        color:$blue-grad-dark
+      }
+    }
+  }
+
 }
 
 @media screen and (min-width: 30em) {
-  footer .inner-wrap {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-    h4 {
-      padding-left: .5em;
-    }
-
-    .security {
-      flex: 0 1 12em;
-    }
-
-    .menu-wrapper {
-      margin: 1.8em 0 0;
-      display: flex;
-      flex: 1 0 auto;
-
-      > span {
-        padding-right:.5em;
-      }
-    }
-
-    .cta {
-      flex: 0 1 22em;
-    }
-
-    .menu-wrapper span img {
-      display: inline;
-    }
-
-    .menu li {
+  footer {
+    .inner-wrap {
       display: flex;
       justify-content: flex-start;
+      flex-wrap: wrap;
 
-      i::after {
-        content: '-';
+      h4 {
+        padding-left: .5em;
       }
+
+      .security {
+        flex: 0 1 12em;
+      }
+
+      .menu-wrapper {
+        margin: 1.8em 0 0;
+        display: flex;
+        flex: 1 0 auto;
+
+        > span {
+          padding-right:.5em;
+        }
+      }
+
+      .cta {
+        flex: 0 1 22em;
+      }
+
+      .menu-wrapper span img {
+        display: inline;
+      }
+
+      .menu li {
+        display: flex;
+        justify-content: flex-start;
+
+        i::after {
+          content: '-';
+        }
+      }
+
     }
 
+    > .menu {
+      ul {
+        justify-content: center;
+
+        li {
+          flex: 0 1 auto;
+        }
+      }
+    }
   }
+
 }
