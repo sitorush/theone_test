@@ -1,0 +1,19 @@
+[{
+  "src": "/images/courses/guitar.png",
+  "name": "Guitare éléctrique"
+},{
+  "src": "/images/courses/accoustic.png",
+  "name": "Guitare acoustique"
+},{
+  "src": "/images/courses/piano.png",
+  "name": "Piano"
+},{
+  "src": "/images/courses/electric-guitar.png",
+  "name": "Basse"
+},{
+  "src": "/images/courses/drum.png",
+  "name": "Batterie"
+},{
+  "src": "/images/courses/mic.png",
+  "name": "Chant"
+}]

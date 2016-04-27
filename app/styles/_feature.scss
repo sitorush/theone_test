@@ -1,0 +1,36 @@
+.feature {
+  ul {
+
+    list-style-type: none;
+    padding: 0 1em;
+
+    li {
+      margin-bottom: 1em;
+      display: flex;
+      flex-direction: row;
+
+      span {
+        padding-right:1em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 40em){
+  .feature ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      flex: 1 0 12em;
+
+      display: flex;
+      justify-content: flex-start;
+
+      i {
+        flex:1 0 70px;
+      }
+    }
+  }
+}

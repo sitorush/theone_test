@@ -1,0 +1,43 @@
+@import 'reset';
+@import 'vars';
+@import 'typography';
+@import 'nav_base';
+@import 'nav';
+@import 'header';
+@import 'hero';
+@import 'button';
+@import 'feature';
+@import 'courses';
+@import 'icon';
+@import 'footer';
+@import 'link';
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: $font-color--dark;
+  background-color: $background--light;
+}
+
+.inner-wrap {
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+section {
+  overflow: hidden;
+
+    h3 {
+      color:#3e4e5c;
+      text-align:center;
+      font-weight: normal;
+    }
+}
+
+.gray-background {
+  background-color: #ededed;
+}
+@media screen and (min-width: 60em) {
+  .inner-wrap {
+    max-width:60em;
+  }
+}

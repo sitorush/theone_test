@@ -1,0 +1,19 @@
+.icon {
+  background: url('/images/sprite.png') no-repeat 0 60px;
+  width: 70px;
+  height: 50px;
+  display: inline-block;
+
+  &.music {
+    background-position: 0 2px;
+  }
+  &.monitor {
+    background-position: 0 -98px;
+  }
+  &.download {
+    background-position: 0 -46px;
+  }
+  &.pad-lock {
+    background-position: 0 -150px;
+  }
+}

@@ -1,0 +1,19 @@
+.button {
+  text-transform: uppercase;
+  color: #fff;
+  padding:.6em 1em;
+
+  &.red {
+    background:red;
+    background-image: linear-gradient(to bottom, #cf1616, #a80000);
+    border-radius: .5em;
+  }
+  
+  &.green {
+    background: #246917;
+    background-image: linear-gradient(to bottom, #208f09, #246917);
+    border: 1px solid #374550;
+    border-radius: .4em;
+    padding: .6em 1em;
+  }
+}

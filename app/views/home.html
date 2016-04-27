@@ -1,0 +1,61 @@
+<section class="hero">
+    <div class="inner-wrap">
+        <div class="intro">
+            <h2>Les cours de piano</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            <div>
+                <a href="" class="button red">DECOUVREZ</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feature">
+    <div class="inner-wrap">
+        <h3>Cours de musique en ligne</h3>
+        <ul>
+            <li><i class="icon download"></i><span>Débutants à experts Cours téléchargeables</span></li>
+            <li><i class="icon music"></i><span>5 instruments de musique 18 categories</span></li>
+            <li><i class="icon monitor"></i><span>Accès illimité 24h/24 Sur ordinateur & tablette</span></li>
+        </ul>
+    </div>
+</section>
+<section class="courses gray-background">
+    <div class="inner-wrap">
+        <h3>Nos cours pour débutants</h3>
+        <ul>
+            <li ng-repeat="course in home.courses">
+                <a href="">
+                    <img ng-src="{{course.src}}" alt="{{course.name}}">
+                    <div>{{course.name}}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="courses">
+    <div class="inner-wrap">
+        <h3>Nos cours intermédiaires</h3>
+        <ul>
+            <li ng-repeat="course in home.courses">
+                <a href="">
+                    <img ng-src="{{course.src}}" alt="{{course.name}}">
+                    <div>{{course.name}}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="courses gray-background">
+    <div class="inner-wrap">
+        <h3>Nos cours avancés</h3>
+        <ul>
+            <li ng-repeat="course in home.courses">
+                <a href="">
+                    <img ng-src="{{course.src}}" alt="{{course.name}}">
+                    <div>{{course.name}}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>

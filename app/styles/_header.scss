@@ -1,0 +1,36 @@
+header {
+  @extend .gradient-blue;
+
+  color:#fff;
+  padding:1em 0;
+
+  .inner-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+
+  span {
+    flex: 0 0 3em;
+    img {
+      width: 80%;
+    }
+  }
+
+  h1 {
+    margin:0;
+    line-height: 1;
+
+    span {
+      display: block;
+      font-size: 40%;
+      font-weight: normal;
+      color:#749ab4;
+    }
+  }
+}

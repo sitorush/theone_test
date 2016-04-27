@@ -1,0 +1,42 @@
+
+.hero {
+  background: url('/images/hero1.jpg') no-repeat center top;
+  height:350px;
+
+
+  .inner-wrap {
+    display: flex;
+  }
+
+  .intro {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .5);
+    margin:1em;
+    padding:1em;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+
+    p {
+      text-align: left;
+    }
+    h2 {
+      margin:0;
+    }
+  }
+}
+
+@media screen and (min-width: 40em){
+  .hero {
+
+    .inner-wrap {
+      justify-content: flex-end;
+    }
+
+    .intro {
+      flex: 0 1 16em;
+      margin-right: 2em;
+    }
+
+  }
+}
